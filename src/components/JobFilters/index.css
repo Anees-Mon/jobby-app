@@ -1,0 +1,42 @@
+input {
+  outline: none;
+}
+.job-filters-container {
+  margin-bottom: 30px;
+}
+.filter-type {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.filter-container {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.filter-item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.filter-input {
+  margin: 0px;
+  margin-right: 8px;
+  height: 12px;
+  width: 12px;
+}
+.filter-label {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-type {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .filter-item-container {
+    margin-bottom: 12px;
+  }
+}

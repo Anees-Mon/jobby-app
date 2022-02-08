@@ -1,0 +1,128 @@
+input {
+  outline: none;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job-loader {
+  height: 40vh;
+}
+
+.jobs-failure-container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.jobs-error-image {
+  width: 100%;
+}
+.jobs-error-heading {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.jobs-error-message {
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+  color: #cbd5e1;
+}
+.jobs-retry-button {
+  font-family: 'Roboto';
+  background-color: #6366f1;
+  font-size: 10px;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0px;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.jobs-page-container {
+  padding: 15px;
+  background-color: #000000;
+}
+.jobs-search-container-small {
+  display: flex;
+  border: solid 1px #64748b;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.jobs-search-container-large {
+  display: none;
+}
+.jobs-search-input {
+  font-family: 'Roboto';
+  font-size: 12px;
+  width: 80%;
+  background-color: transparent;
+  padding: 6px;
+  padding-left: 15px;
+  border: 0px;
+  color: #ffffff;
+}
+.jobs-search-button {
+  font-family: 'Roboto';
+  width: 20%;
+  background-color: #202020;
+  border: 0px;
+}
+.search-icon {
+  color: #ffffff;
+}
+
+.jobs-horizontal-line {
+  border-color: #64748b;
+  border-width: 2px;
+  margin: 0px;
+}
+.jobs-list-container {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-search-container-small {
+    display: none;
+  }
+  .jobs-search-container-large {
+    display: flex;
+    border: solid 1px #64748b;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  .jobs-page-container {
+    display: flex;
+    padding: 30px;
+  }
+  .profile-filters-container {
+    min-width: 30%;
+    margin-right: 30px;
+  }
+  .job-loader {
+    height: 80vh;
+    width: 100%;
+  }
+  .search-jobs-list-container {
+    width: 100%;
+  }
+  .jobs-error-image {
+    width: 70%;
+    max-width: 300px;
+  }
+  .jobs-error-heading {
+    font-size: 25px;
+  }
+  .jobs-error-message {
+    font-size: 11px;
+  }
+}
