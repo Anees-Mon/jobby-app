@@ -49,6 +49,7 @@ class JobItemDetails extends Component {
     if (response.ok) {
       const jobDetails = fetchedData.job_details
       const updatedJobDetails = {
+        title: jobDetails.title,
         companyLogoUrl: jobDetails.company_logo_url,
         companyWebsiteUrl: jobDetails.company_website_url,
         employmentType: jobDetails.employment_type,
@@ -96,6 +97,7 @@ class JobItemDetails extends Component {
   renderJobItemDetails = () => {
     const {jobDetails, similarJobs} = this.state
     const {
+      title,
       companyLogoUrl,
       companyWebsiteUrl,
       employmentType,
@@ -107,7 +109,6 @@ class JobItemDetails extends Component {
       rating,
     } = jobDetails
     const {description, imageUrl} = lifeAtCompany
-    const {title} = similarJobs[0]
 
     return (
       <>
